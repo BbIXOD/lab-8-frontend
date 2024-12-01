@@ -31,6 +31,16 @@ body {
     padding: 1%;
 }
 
+.center-x {
+    display: flex;
+    justify-content: center;
+}
+
+.big-padding {
+    box-sizing: border-box;
+    padding: 4vw;
+}
+
 .btn {
     border-radius: 30px;
     border-width: 0%;
@@ -43,13 +53,19 @@ body {
 
 .mini-caption {
     color: #5F60FF;
-    font-size: calc(var(--base-font-size) / 1);
+    font-size: var(--base-font-size);
     font-weight:700;
 }
 
 .center-img {
     margin: auto;
     display: block;
+}
+
+.text-content {
+    font-size: calc(var(--base-font-size) * 1.75);
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 /* slide 1 */
@@ -164,4 +180,30 @@ body {
 .caption {
     font-size: calc(var(--base-font-size) * 3);
     margin: 0% 25% 1%
+}
+
+/* slide 3 */
+.dark {
+    background-color: #464646;
+    color: #d5d5d5;
+}
+
+.white-text {
+    color: #d5d5d5 !important;
+}
+
+.half-width-img {
+    width: 50vw;
+    height: auto;
+    display: block;
+}
+
+.solid-row {
+    padding: 0%;
+    display: flex;
+
+}
+
+.solid-row > * {
+    flex: 1 1 auto;
 }
