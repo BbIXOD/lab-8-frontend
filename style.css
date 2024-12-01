@@ -41,6 +41,17 @@ body {
     padding: 0.5vw;
 }
 
+.mini-caption {
+    color: #5F60FF;
+    font-size: calc(var(--base-font-size) / 1);
+    font-weight:700;
+}
+
+.center-img {
+    margin: auto;
+    display: block;
+}
+
 /* slide 1 */
 .leading-slide {
     background-image: url(images/title-background.jpg);
@@ -89,11 +100,10 @@ body {
 }
 
 .select-minimal::after {
-    content: ">";
+    content: "⮹";
     color: #898989;
-    font-size: calc(var(--base-font-size) * 2);
-    font-weight: bolder;
-    transform: rotate(90deg) translateX(3px);
+    font-size: calc(var(--base-font-size) * 1.5);
+    transform: rotate(180deg) translateY(-7px);
     position: absolute;
 }
 
@@ -101,9 +111,57 @@ body {
     color: aqua;
     font-size: calc(var(--base-font-size) * 5);
     font-weight: bold;
-    margin: 8vw 27vw 0.5vw 3vw !important;
+    margin: 8vw 27vw 0.5vw 3vw;
 }
 
 .shift-right {
     margin: 3vw;
+}
+
+/* slide 2 */
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 15px;
+}
+
+.card {
+    border: 1px solid #898989;
+    border-radius: 2px;
+    box-sizing: border-box;
+    margin: 3px;
+    padding: 5px;
+}
+
+.card > .center-img {
+    height: 10vh;
+    width: auto;
+}
+
+.card > .c-capt {
+    margin: auto;
+    display: block;
+    font-size: calc(var(--base-font-size) * 1.6);
+}
+
+.card > .card-text {
+    margin: auto;
+    display: block;
+    font-size: calc(var(--base-font-size) * 1);
+    color: #898989;
+}
+
+.capt-container {
+    margin-top: 15vh;
+    margin-bottom: 0px;
+    padding: 0%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.caption {
+    font-size: calc(var(--base-font-size) * 3);
+    margin: 0% 25% 1%
 }
